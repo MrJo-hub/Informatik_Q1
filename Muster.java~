@@ -1,0 +1,24 @@
+/**
+ * Klasse Muster
+ * Muster zur Erstellung einer Klasse, die von PriorityObject erbt.
+ * Der Konstruktor muss mit super die Prioritaet uebergeben.
+ * Die Methode tString muss ueberschrieben werden.
+ * 
+ * @author Rudolf Silberberg
+ * @version 2015-01-18
+ */
+public class Muster extends PriorityObject
+{
+    //Attribute
+    
+    //Konstruktor
+    public Muster(int pPriority) {
+        super(pPriority);
+    }
+    
+    //Methoden
+    @override
+    public String toString() {
+        return(""+gibPriority());
+    }
+}

@@ -1,0 +1,12 @@
+#BlueJ class context
+#Tue Nov 03 22:54:57 CET 2026
+comment0.target=PatientenQueue
+comment0.text=\n Beschreiben Sie hier die Klasse PatientenQueue.\n \n @author (Ihr Name) \n @version (eine Versionsnummer oder ein Datum)\n
+comment1.target=PatientenQueue()
+comment1.text=\n Konstruktor f\u00FCr Objekte der Klasse PatientenQueue\n
+comment2.target=Patient vorne()
+comment3.target=void patientEntfernen()
+comment4.target=boolean istLeer()
+comment5.params=pPatient
+comment5.target=void patientEinfuegen(Patient)
+numComments=6

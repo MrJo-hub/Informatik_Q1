@@ -1,0 +1,24 @@
+#BlueJ class context
+#Tue Nov 03 22:54:57 CET 2026
+comment0.target=ListGUI
+comment1.target=ListGUI()
+comment1.text=\n Ein Konstruktor ohne Parameter<br>\n Intern wird ein anderer Konstruktor aufgerufen,\n der zwei Parameter erwartet. Diesem werden die\n Parameter 0 und "Liste" uebergeben.\n
+comment2.params=name
+comment2.target=ListGUI(java.lang.String)
+comment2.text=\n Ein Konstruktor mit einem Parameter<br>\n Der Parameter gibt den Namen an,\n der fuer die Liste angezeigt wird.<br>\n Intern wird ein anderer Konstruktor aufgerufen,\n der zwei Parameter erwartet. Diesem wird\n ausserdem der Parameter 0 uebergeben.\n
+comment3.params=nr name
+comment3.target=ListGUI(int, java.lang.String)
+comment3.text=\n Ein Konstruktor mit Parameter<br>\n Der Parameter gibt an, wo die GUI auf dem\n Bildschirm erscheinen soll.<br>\n Wenn der Parameter 0 ist, erscheint die GUI oben.<br>\n Wenn der Parameter 1 ist, erscheint die GUI in der Mitte.<br>\n Wenn der Parameter 2 ist, erscheint die GUI unten.\n \n @param nr die Kennzahl fuer die Bildschirmposition\n @param name der Name der Liste, der angezeigt wird\n
+comment4.params=gui
+comment4.target=void guiAnmelden(ListGUI)
+comment4.text=\n Mit dieser Methode kann eine andere Instanz der\n Klasse ListGUI angemeldet werden.<br>\n Damit ist es moeglich, zwei Listen zu verwalten\n und mithilfe der Methode concat zu verknuepfen.\n \n @param gui die andere GUI\n
+comment5.params=list
+comment5.target=void listAnmelden(List)
+comment5.text=\n Mit dieser Methode kann eine extern erzeugte\n Liste angemeldet werden.<br>\n Die Liste wird in dem Attribut myList gespeichert.\n \n @param list die Liste, die angemeldet werden soll.\n
+comment6.params=pContentVisibility
+comment6.target=void inhalteAnzeigen(boolean)
+comment7.params=content
+comment7.target=void nodeEinfuegen(java.lang.String)
+comment8.target=List gibMyList()
+comment8.text=\n Die einfach verkettete Liste dieser GUI wird zurueck gegeben.\n \n @return die Liste\n
+numComments=9

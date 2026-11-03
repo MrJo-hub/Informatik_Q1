@@ -1,0 +1,39 @@
+
+/**
+ * Die Test-Klasse start1.
+ *
+ * @author 
+ * @version 
+ */
+public class start1 extends junit.framework.TestCase
+{
+    // Bezugsobjekte
+
+    // Attribute
+
+    // Konstruktor
+    public start1()
+    {
+    }
+
+    /**
+     *  Setzt die Festlegungen fuer den Test.
+     *
+     * Wird vor jeder Testfall-Methode aufgerufen.
+     */
+    protected void setUp()
+    {
+    }
+
+    /**
+     * Gibt die Test-Festlegungen wieder frei.
+     *
+     * Wird nach jeder Testfall-Methode aufgerufen.
+     */
+    protected void tearDown()
+    {
+    }
+
+    // Testmethoden
+
+}

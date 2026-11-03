@@ -1,0 +1,19 @@
+#BlueJ class context
+#Tue Nov 03 22:54:57 CET 2026
+comment0.target=PriorityObject
+comment0.text=\n Die abstrakte Klasse PriorityObject dient als Elternklasse fuer Klassen\n deren Objekte in einer PriorityQueue verwaltet werden sollen.\n Die Klasse implementiert das generische Interface ComparableContent.\n \n @author Sven Hees\n @version 2017-04-01\n
+comment1.params=pPriority
+comment1.target=PriorityObject(int)
+comment1.text=\n Erzeugt ein PriorityObjekt mit der uebergebenen Prioritaet\n \n @param pPriority Prioritaet\n
+comment2.target=int gibPriority()
+comment2.text=\n Gibt die Prioritaet zurueck\n \n @return Prioritaet\n
+comment3.params=pPriorityObject
+comment3.target=boolean isEqual(PriorityObject)
+comment3.text=\n Wenn festgestellt wird, dass die Prioritaet des aufrufenden Objekts\n gleich der Prioritaet des uebergebenen Objekts pPriorityObject ist\n wird true zurueckgegeben, sonst false.\n \n @param pPriorityObject Objekt mit dem verglichen werden soll\n \n @return true, wenn das aufrufende Objekt bzgl. der Prioritaet \n         gleich gross ist wie das Objekt pPriorityObjekt, sonst false\n
+comment4.params=pPriorityObject
+comment4.target=boolean isGreater(PriorityObject)
+comment4.text=\n Wenn festgestellt wird, dass die Prioritaet des aufrufenden Objekts\n groesser als die Prioritaet des uebergebenen Objekts pPriorityObject ist\n wird true zurueckgegeben, sonst false.\n \n @param pPriorityObject Objekt mit dem verglichen werden soll\n \n @return true, wenn das aufrufende Objekt bzgl. der Prioritaet \n         groesser ist als das Objekt pPriorityObjekt, sonst false\n
+comment5.params=pPriorityObject
+comment5.target=boolean isLess(PriorityObject)
+comment5.text=\n Wenn festgestellt wird, dass die Prioritaet des aufrufenden Objekts\n kleiner als die Prioritaet des uebergebenen Objekts pPriorityObject ist\n wird true zurueckgegeben, sonst false.\n \n @param pPriorityObject Objekt mit dem verglichen werden soll\n \n @return true, wenn das aufrufende Objekt bzgl. der Prioritaet \n         kleiner ist als das Objekt pPriorityObjekt, sonst false\n
+numComments=6

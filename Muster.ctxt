@@ -1,0 +1,8 @@
+#BlueJ class context
+#Tue Nov 03 22:54:57 CET 2026
+comment0.target=Muster
+comment0.text=\n Klasse Muster\n Muster zur Erstellung einer Klasse, die von PriorityObject erbt.\n Der Konstruktor muss mit super die Prioritaet uebergeben.\n Die Methode tString muss ueberschrieben werden.\n \n @author Rudolf Silberberg\n @version 2015-01-18\n
+comment1.params=pPriority
+comment1.target=Muster(int)
+comment2.target=java.lang.String toString()
+numComments=3

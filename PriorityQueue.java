@@ -1,0 +1,99 @@
+/**
+ * Objekte der generischen Klasse PriorityQueue (Prioritätenschlange) verwalten
+ * Objekte vom Typ ContentType, die von der generische abstrakten Klasse
+ * PriorityQbject erben. Dabei werden die Objekte nach der jeweiligen Priorität
+ * in die Warteschlange einsortiert. Für jede Priorität gilt das
+ * First-In-First-Out-Prinzip. Nur das erste Objekt kann entnommen werden.
+ */
+
+
+public class PriorityQueue<ContentType extends PriorityObject> {
+    //Attribute
+    public List<ContentType> dieListe;
+    private ListGUI gui;
+
+    /**
+     * Eine leere Prioritätenschlange wird erzeugt.<br>
+     * Objekte, die in dieser Schlange verwaltet werden, müssen vom Typ ContentType
+     * sein und von der generischen abstrakten Klasse PriorityObject erben.
+     */
+    public PriorityQueue(){
+        dieListe = new List<ContentType>();
+        gui = new ListGUI("PriorityQueue");
+        gui.listAnmelden(dieListe);
+    }
+
+    /**
+     * Das Objekt pContent wird entsprechend der Priorität in die Prioritätenschlange einsortiert.<br><br>
+     * Dabei gilt:
+     * <ul><li>Objekte mit höherer Priorität werden nach Objekten mit niedrigerer Priorität einsortiert.</li>
+     * <li>Gibt es Objekte mit gleicher Priorität, wird das Objekt nach dem letzten Objekt mit gleicher Priorität einsortiert.</li>
+     * <li>Falls pContent gleich null ist, bleibt die PriorityQueue unverändert.</li></ul>
+     * 
+     * @param pPriorityObject das einzufuegende PriorityObject
+     */
+    public void inqueue(ContentType pPriorityObject) {
+        if(pPriorityObject == null){
+            return;
+        }
+        if(isEmpty()){
+            dieListe.insert(pPriorityObject);
+            return;
+        }
+
+        dieListe.toFirst();
+        while(dieListe.hasAccess()){
+            if(pPriorityObject.isLess(dieListe.getContent())){
+                dieListe.insert(pPriorityObject);
+                return;
+            } else {
+                dieListe.next();
+            }
+        }
+        dieListe.append(pPriorityObject);
+    }
+
+    /**
+     * Die Anfrage liefert das erste Objekt der PriorityQueue.<br>
+     * Die PriorityQueue bleibt unveraendert.<br>
+     * Falls die PriorityQueue leer ist, wird null zurueck gegeben.
+     * 
+     * @return das PriorityObject am Kopf der PriorityQueue
+     */
+    public ContentType front() {
+        dieListe.toFirst();
+        return dieListe.getContent();
+    }
+
+    /**
+     * Das erste Objekt wird aus der PriorityQueue entfernt.<br>
+     * Falls die PriorityQueue leer ist, wird sie nicht veraendert.
+     */
+    public void dequeue() {
+        dieListe.toFirst();
+        dieListe.remove();
+    }
+
+    /**
+     * Wenn die PriorityQueue leer ist, liefert diese Anfrage true, sonst false.<br>
+     * 
+     * @return true, falls die PriorityQueue leer ist, sonst false
+     */
+    public boolean isEmpty() {
+        return dieListe.isEmpty();
+    }
+
+    /**
+     * Die als Parameter uebergebene PriorityQueue wird in diese Queue eingefuegt.<br>
+     * Nach dem Einfuegen ist die uebergebene PriorityQueue leer.
+     * @param dieAndereQueue wird in diese PriorityQueue eingefuegt.
+     */
+    public void concat(PriorityQueue<ContentType> dieAndereQueue) {
+        if (dieAndereQueue != null) {
+            while (!dieAndereQueue.isEmpty()) {
+                this.inqueue(dieAndereQueue.front());
+                dieAndereQueue.dequeue();
+            }
+        }
+    }
+}

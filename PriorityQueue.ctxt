@@ -1,0 +1,19 @@
+#BlueJ class context
+#Tue Nov 03 22:54:57 CET 2026
+comment0.target=PriorityQueue
+comment0.text=\n Objekte der generischen Klasse PriorityQueue (Priorit\u00E4tenschlange) verwalten\n Objekte vom Typ ContentType, die von der generische abstrakten Klasse\n PriorityQbject erben. Dabei werden die Objekte nach der jeweiligen Priorit\u00E4t\n in die Warteschlange einsortiert. F\u00FCr jede Priorit\u00E4t gilt das\n First-In-First-Out-Prinzip. Nur das erste Objekt kann entnommen werden.\n
+comment1.target=PriorityQueue()
+comment1.text=\n Eine leere Priorit\u00E4tenschlange wird erzeugt.<br>\n Objekte, die in dieser Schlange verwaltet werden, m\u00FCssen vom Typ ContentType\n sein und von der generischen abstrakten Klasse PriorityObject erben.\n
+comment2.params=pPriorityObject
+comment2.target=void inqueue(PriorityObject)
+comment2.text=\n Das Objekt pContent wird entsprechend der Priorit\u00E4t in die Priorit\u00E4tenschlange einsortiert.<br><br>\n Dabei gilt\:\n <ul><li>Objekte mit h\u00F6herer Priorit\u00E4t werden nach Objekten mit niedrigerer Priorit\u00E4t einsortiert.</li>\n <li>Gibt es Objekte mit gleicher Priorit\u00E4t, wird das Objekt nach dem letzten Objekt mit gleicher Priorit\u00E4t einsortiert.</li>\n <li>Falls pContent gleich null ist, bleibt die PriorityQueue unver\u00E4ndert.</li></ul>\n \n @param pPriorityObject das einzufuegende PriorityObject\n
+comment3.target=PriorityObject front()
+comment3.text=\n Die Anfrage liefert das erste Objekt der PriorityQueue.<br>\n Die PriorityQueue bleibt unveraendert.<br>\n Falls die PriorityQueue leer ist, wird null zurueck gegeben.\n \n @return das PriorityObject am Kopf der PriorityQueue\n
+comment4.target=void dequeue()
+comment4.text=\n Das erste Objekt wird aus der PriorityQueue entfernt.<br>\n Falls die PriorityQueue leer ist, wird sie nicht veraendert.\n
+comment5.target=boolean isEmpty()
+comment5.text=\n Wenn die PriorityQueue leer ist, liefert diese Anfrage true, sonst false.<br>\n \n @return true, falls die PriorityQueue leer ist, sonst false\n
+comment6.params=dieAndereQueue
+comment6.target=void concat(PriorityQueue)
+comment6.text=\n Die als Parameter uebergebene PriorityQueue wird in diese Queue eingefuegt.<br>\n Nach dem Einfuegen ist die uebergebene PriorityQueue leer.\n @param dieAndereQueue wird in diese PriorityQueue eingefuegt.\n
+numComments=7

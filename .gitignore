@@ -147,3 +147,24 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# --- Abhängigkeiten ---
+node_modules/
+vendor/
+
+# --- Build-Artefakte & Ausgabe ---
+dist/
+build/
+*.log
+
+# --- Umgebungsvariablen & Geheimnisse ---
+.env
+.env.local
+*.pem
+
+# --- Betriebssysteme & Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.vs/

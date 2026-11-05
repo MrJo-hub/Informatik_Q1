@@ -160,6 +160,7 @@ build/
 # --- Umgebungsvariablen & Geheimnisse ---
 .env
 .env.local
+.env.global
 *.pem
 
 # --- Betriebssysteme & Editor ---
